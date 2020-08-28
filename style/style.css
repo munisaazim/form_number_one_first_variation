@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+html{
+    padding:0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    outline:none;
+}
+body{
+   background:url('../image/3.jpg') no-repeat center center fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   height: 100vh;
+}
+.container{
+    position: absolute;
+    top: 30%;
+    transform: rotateY(-50%);
+    width: 100%;
+    padding: 0 20px;
+}
+.contactForm{
+    max-width: 550px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius:5px;
+    display: flex;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.13);
+}
+.inputFields{
+    display: flex;
+    flex-direction: column;
+    margin-right: 4%;
+}
+.inputFields, .msg{
+    width: 48%;
+}
+.inputFields .input{
+    margin: 10px 0;
+    background:transparent;
+    border:0;
+    border-bottom: 2px solid #c5ecfd;
+    padding:10px;
+    color:#c5ecfd;
+    width: 100%;
+}
+.msg textarea{
+    margin: 10px 0;
+    background:transparent;
+    border:0;
+    border-bottom: 2px solid #c5ecfd;
+    padding:10px;
+    color:#c5ecfd;
+    width: 90%;
+    height: 190px;
+    margin-left: 15px;
+}
+::-webkit-input-placeholder{
+    color:#c5ecfd;
+}
+::-moz-input-placeholder{
+    color:#c5ecfd;
+}
+::-ms-sinput-placeholder{
+    color:#c5ecfd;
+}
+.btn{
+    background:#39b7dd;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-left: 15px;
+    width: 30%;
+}
+@media(max-width:600px){
+    .contactForm{
+        flex-direction: column;
+    }
+    .msg textarea{
+        height:80px;
+        margin-left: 0;
+        width:100%;
+    }
+    .btn{
+        margin-left: 0px;
+        width: 90%;
+    }
+    .inputFields, .msg{
+        width: 100%;
+    }
+}
