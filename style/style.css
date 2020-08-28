@@ -81,6 +81,7 @@ body{
 @media(max-width:600px){
     .contactForm{
         flex-direction: column;
+        width: 70%;
     }
     .msg textarea{
         height:80px;
